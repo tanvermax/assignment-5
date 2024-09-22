@@ -26,47 +26,66 @@
     </style>
   </head>
   <body>
-    <header class="sticky top-0 z-10 ">
-      <div class="navbar bg-base-100 bg-[#F9F7F3] py-6 px-32">
+    <header class="sticky top-0 z-10">
+      <div class="navbar bg-base-100 bg-[#F9F7F3] py-2 px-4 lg:py-6 lg:px-32">
         <div class="navbar-start">
-          <div class="agkerbg rounded-lg btn h-12 w-28">
-            <button class="text-black leaxand text-xl">Blog</button>
+          <div class="agkerbg rounded-lg btn lg:h-12 lg:w-28">
+            <button class="text-black leaxand text-sm lg:text-xl">Blog</button>
           </div>
         </div>
         <div class="navbar-center flex justify-center">
-          <div class="mr-4"><img src="img/logo.png" alt="" /></div>
-          <div class="leaxand font text-xl font-semibold">
+          <div class="lg:mr-4"><img src="img/logo.png" alt="" /></div>
+          <div class="leaxand font text-sm lg:text-xl font-semibold">
             Donate Bangladesh
           </div>
         </div>
         <div class="navbar-end">
-          <div class="mr-2"><img src="img/coin.png" alt="" /></div>
-          <div id="main-balance" class="leaxand text-xl">10000</div>
-          <div class="leaxand text-xl ml-1">BDT</div>
+          <div class="lg:mr-2"><img src="img/coin.png" alt="" /></div>
+          <div id="main-balance" class="leaxand text-sm lg:text-xl">10000</div>
+          <div class="leaxand text-sm lg:text-xl ml-1">BDT</div>
         </div>
       </div>
     </header>
-    <main class="px-32">
+    <main class="lg:px-32 px-4">
       <!-- section 1 for donation and button -->
-      <section
-        class="flex justify-center pt-20 sticky top-14 z-10 backdrop-blur-sm  "
+      <section id="sec-one"
+        class="flex justify-center pt-5 lg:pt-20 sticky top-14 z-10 backdrop-blur-sm"
       >
         <button
-          class="btn leaxand agkerbg text-[#111111] border-none btn-outline text-xl mx-2 h-12 w-36"
+          id="donation-btn"
+          class="btn leaxand agkerbg text-[#111111] border-none btn-outline text-xs lg:text-xl mx-2 lg:h-12 lg:w-36"
         >
           Donation
         </button>
         <button
-          class="btn leaxand btn-outline text-xl text-[#111111B3] borde[#1111114D] mx-2 h-12 w-32"
+          id="histor-btn"
+          class="btn leaxand btn-outline text-xs lg:text-xl text-[#111111B3] borde[#1111114D] mx-2 lg:h-12 lg:w-32"
         >
           History
         </button>
       </section>
+            <!-- 4th and congrets section -->
+            <section
+            id="congrets-sec"
+            class="items-center flex justify-center p-14 border-2 rounded-2xl  fixed top-[20%] left-[40%] z-10 w-96 bg-white hidden"
+          >
+            <div class="text-center items-center">
+              <h1 class="text-3xl leaxand font-extrabold my-3">Congrates!</h1>
+              <img class="mx-auto" src="img/coin.png" alt="" />
+              <p class="leaxand text-xl font-light my-3">
+                You Have Donated for Humankind
+              </p>
+              <h2 class="text-2xl leaxand font-semibold">Succesfully</h2>
+              <button id="close-btn" class="border-2 rounded-xl h-12 leaxand p-2 my-3">
+                close confirmation
+              </button>
+            </div>
+          </section>
       <!-- 2nd section -->
-      <section class="my-10  ">
+      <section id="sec-three" class="lg:my-10">
         <!-- 1st card    -->
         <div
-          class="card lg:card-side grid grid-cols-2 p-8 my-10 rounded-2xl border-2 h-[453px]"
+          class="card lg:card-side grid lg:grid-cols-2 p-8 my-10 rounded-2xl border-2 lg:h-[453px]"
         >
           <figure class="p-3">
             <img
@@ -74,19 +93,21 @@
               src="img/noakhali.png"
             />
           </figure>
-          <div class="card-body py-3">
+          <div class="card-body px-0 py-3">
             <div
               class="flex bg-[#1111110D] w-36 rounded-xl h-12 justify-center items-center"
             >
               <div class="mr-2"><img src="img/coin.png" alt="" /></div>
-              <div id="noyakhali-balance" class="leaxand text-xl">3000</div>
-              <div class="leaxand text-xl ml-1">BDT</div>
+              <div id="noyakhali-balance" class="leaxand text-sm lg:text-xl">
+                3000
+              </div>
+              <div class="leaxand text-sm lg:text-xl ml-1">BDT</div>
             </div>
-            <h2 class="card-title text-xl leaxand">
+            <h2 class="card-title text-sm lg:text-xl leaxand">
               Donate for Flood at Noakhali, Bangladesh
             </h2>
             <p
-              class="leaxand text-[16px] font-light tracking-normal leading-8 text-[#111111B3]"
+              class="leaxand lg:text-[16px] text-xs font-light tracking-normal leading-8 text-[#111111B3]"
             >
               The recent floods in Noakhali have caused significant damage to
               homes infrastructure. Your donation will help provide essential
@@ -96,18 +117,21 @@
               lives of those in need.
             </p>
             <div class="card-actions grid grid-rows-2">
-              <input id="input-for-donet"
-                class="border-2 rounded-md h-12 p-3 text-sm font-light leaxand"
+              <input
+                id="input-for-donet"
+                class="border-2 rounded-md h-12 p-3 text-xs lg:text-sm font-light leaxand"
                 type="number"
                 placeholder="Write Donation Amount"
               />
-              <button id="donet-now" class="btn agkerbg text-xl leaxand">Donate Now</button>
+              <button id="donet-now" class="btn agkerbg lg:text-xl leaxand">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
         <!-- 2nd card -->
         <div
-          class="card lg:card-side grid grid-cols-2 p-8 rounded-2xl border-2 h-[453px]"
+          class="card lg:card-side grid lg:grid-cols-2 p-8 rounded-2xl border-2 lg:h-[453px]"
         >
           <figure class="p-3">
             <img
@@ -115,19 +139,21 @@
               src="img/feni.png"
             />
           </figure>
-          <div class="card-body py-3">
+          <div class="card-body px-0 py-3">
             <div
               class="flex bg-[#1111110D] w-36 rounded-xl h-12 justify-center items-center"
             >
               <div class="mr-2"><img src="img/coin.png" alt="" /></div>
-              <div class="leaxand text-xl">800</div>
-              <div class="leaxand text-xl ml-1">BDT</div>
+              <div id="feni-balance" class="leaxand text-sm lg:text-xl">
+                800
+              </div>
+              <div class="leaxand text-sm lg:text-xl ml-1">BDT</div>
             </div>
-            <h2 class="card-title text-xl leaxand">
+            <h2 class="card-title text-sm lg:text-xl leaxand">
               Donate for Flood Relief in Feni,Bangladesh
             </h2>
             <p
-              class="leaxand text-[16px] font-light tracking-normal leading-8 text-[#111111B3]"
+              class="leaxand text-xs lg:text-[16px] font-light tracking-normal leading-8 text-[#111111B3]"
             >
               The recent floods in Feni have devastated local communities,
               leading to severe disruption and loss. Your generous donation will
@@ -140,17 +166,20 @@
             </p>
             <div class="card-actions grid grid-rows-2">
               <input
-                class="border-2 rounded-md h-12 p-3 text-sm font-light leaxand"
+                id="input-for-feni-donet"
+                class="border-2 rounded-md h-12 p-3 text-xs lg:text-sm font-light leaxand"
                 type="number"
                 placeholder="Write Donation Amount"
               />
-              <button class="btn agkerbg text-xl leaxand">Donate Now</button>
+              <button id="donet-now-2" class="btn agkerbg lg:text-xl leaxand">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
         <!-- 3rd card -->
         <div
-          class="card lg:card-side grid grid-cols-2 p-8 rounded-2xl border-2 h-[453px] my-10"
+          class="card lg:card-side grid lg:grid-cols-2 p-8 rounded-2xl border-2 lg:h-[453px] my-10"
         >
           <figure class="p-3">
             <img
@@ -158,19 +187,21 @@
               src="img/quota-protest.png"
             />
           </figure>
-          <div class="card-body py-3">
+          <div class="card-body px-0 py-3">
             <div
               class="flex bg-[#1111110D] w-36 rounded-xl h-12 justify-center items-center"
             >
               <div class="mr-2"><img src="img/coin.png" alt="" /></div>
-              <div class="leaxand text-xl">4600</div>
-              <div class="leaxand text-xl ml-1">BDT</div>
+              <div id="student-balance" class="leaxand text-sm lg:text-xl">
+                4600
+              </div>
+              <div class="leaxand text-sm lg:text-xl ml-1">BDT</div>
             </div>
-            <h2 class="card-title text-xl leaxand">
+            <h2 class="card-title text-sm lg:text-xl leaxand">
               Aid for Injured in the Quota Movement
             </h2>
             <p
-              class="leaxand text-[16px] font-light tracking-normal leading-8 text-[#111111B3]"
+              class="leaxand lg:text-[16px] text-xs font-light tracking-normal leading-8 text-[#111111B3]"
             >
               The recent Quota movement has resulted in numerous injuries and
               significant hardship for many individuals. Your support is crucial
@@ -184,34 +215,29 @@
             </p>
             <div class="card-actions grid grid-rows-2">
               <input
-                class="border-2 rounded-md h-12 p-3 text-sm font-light leaxand"
+                id="input-for-student"
+                class="border-2 rounded-md h-12 p-3 lg:text-sm font-light leaxand text-xs"
                 type="number"
                 placeholder="Write Donation Amount"
               />
-              <button class="btn agkerbg text-xl leaxand">Donate Now</button>
+              <button id="donet-now-3" class="btn agkerbg lg:text-xl leaxand">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- history section -->
-       <section>
-<div>
-  <h2></h2>
-</div>
-       </section>
-      <!-- 4th and congrets section -->
-      <section class="items-center flex justify-center p-14 border-2 rounded-2xl my-[50%] hidden">
-        <div class="text-center items-center ">
-          <h1 class="text-3xl leaxand font-extrabold my-3">Congrates!</h1>
-          <img class="mx-auto" src="img/coin.png" alt="" />
-          <p class="leaxand text-xl font-light my-3">You Have Donated for Humankind</p>
-          <h2 class="text-2xl leaxand font-semibold">Succesfully</h2>
-          <button class="border-2 rounded-xl h-12 leaxand p-2 my-3">close confirmation</button>
+      <section>
+        <div>
+          <h2></h2>
         </div>
       </section>
+
     </main>
     <script src="js/function.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/history.js"></script>
   </body>
 </html>
