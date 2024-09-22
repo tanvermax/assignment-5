@@ -26,7 +26,7 @@
     </style>
   </head>
   <body>
-    <header class="sticky top-0 z-10 hidden">
+    <header class="sticky top-0 z-10 ">
       <div class="navbar bg-base-100 bg-[#F9F7F3] py-6 px-32">
         <div class="navbar-start">
           <div class="agkerbg rounded-lg btn h-12 w-28">
@@ -41,7 +41,7 @@
         </div>
         <div class="navbar-end">
           <div class="mr-2"><img src="img/coin.png" alt="" /></div>
-          <div class="leaxand text-xl">5500</div>
+          <div id="main-balance" class="leaxand text-xl">10000</div>
           <div class="leaxand text-xl ml-1">BDT</div>
         </div>
       </div>
@@ -49,7 +49,7 @@
     <main class="px-32">
       <!-- section 1 for donation and button -->
       <section
-        class="flex justify-center pt-20 sticky top-14 z-10 backdrop-blur-sm hidden"
+        class="flex justify-center pt-20 sticky top-14 z-10 backdrop-blur-sm  "
       >
         <button
           class="btn leaxand agkerbg text-[#111111] border-none btn-outline text-xl mx-2 h-12 w-36"
@@ -63,7 +63,7 @@
         </button>
       </section>
       <!-- 2nd section -->
-      <section class="my-10 hidden">
+      <section class="my-10  ">
         <!-- 1st card    -->
         <div
           class="card lg:card-side grid grid-cols-2 p-8 my-10 rounded-2xl border-2 h-[453px]"
@@ -79,7 +79,7 @@
               class="flex bg-[#1111110D] w-36 rounded-xl h-12 justify-center items-center"
             >
               <div class="mr-2"><img src="img/coin.png" alt="" /></div>
-              <div class="leaxand text-xl">3000</div>
+              <div id="noyakhali-balance" class="leaxand text-xl">3000</div>
               <div class="leaxand text-xl ml-1">BDT</div>
             </div>
             <h2 class="card-title text-xl leaxand">
@@ -96,12 +96,12 @@
               lives of those in need.
             </p>
             <div class="card-actions grid grid-rows-2">
-              <input
+              <input id="input-for-donet"
                 class="border-2 rounded-md h-12 p-3 text-sm font-light leaxand"
                 type="number"
                 placeholder="Write Donation Amount"
               />
-              <button class="btn agkerbg text-xl leaxand">Donate Now</button>
+              <button id="donet-now" class="btn agkerbg text-xl leaxand">Donate Now</button>
             </div>
           </div>
         </div>
@@ -193,8 +193,14 @@
           </div>
         </div>
       </section>
-      <!-- 3rd and congrets section -->
-      <section class="items-center flex justify-center p-14 border-2 rounded-2xl my-[50%]">
+      <!-- history section -->
+       <section>
+<div>
+  <h2></h2>
+</div>
+       </section>
+      <!-- 4th and congrets section -->
+      <section class="items-center flex justify-center p-14 border-2 rounded-2xl my-[50%] hidden">
         <div class="text-center items-center ">
           <h1 class="text-3xl leaxand font-extrabold my-3">Congrates!</h1>
           <img class="mx-auto" src="img/coin.png" alt="" />
@@ -204,5 +210,8 @@
         </div>
       </section>
     </main>
+    <script src="js/function.js"></script>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
