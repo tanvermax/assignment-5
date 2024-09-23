@@ -29,8 +29,8 @@
     <header class="sticky top-0 z-10">
       <div class="navbar bg-base-100 bg-[#F9F7F3] py-2 px-4 lg:py-6 lg:px-32">
         <div class="navbar-start">
-          <div class="agkerbg rounded-lg btn lg:h-12 lg:w-28">
-            <button id="blog-btn" class="text-black leaxand text-sm lg:text-xl">Blog</button>
+          <div id="blog-btn" class="agkerbg rounded-lg btn lg:h-12 lg:w-28">
+            <button  class="text-black leaxand text-sm lg:text-xl">Blog</button>
           </div>
         </div>
         <div class="navbar-center flex justify-center">
@@ -50,7 +50,7 @@
       <!-- section 1 for donation and button -->
       <section
         id="sec-one"
-        class="flex justify-center pt-5 lg:pt-20 sticky top-14 z-10 backdrop-blur-sm"
+        class="flex justify-center pt-5 lg:pt-20 sticky top-20 z-10 backdrop-blur-sm"
       >
         <button
           id="donation-btn"
@@ -122,7 +122,7 @@
               lives of those in need.
             </p>
             <div class="card-actions grid grid-rows-2">
-              <input
+              <input autocomplete="off"
                 id="input-for-donet"
                 class="border-2 rounded-md h-12 p-3 text-xs lg:text-sm font-light leaxand"
                 type="number"
@@ -174,7 +174,7 @@
                 id="input-for-feni-donet"
                 class="border-2 rounded-md h-12 p-3 text-xs lg:text-sm font-light leaxand"
                 type="number"
-                placeholder="Write Donation Amount"
+                placeholder="Write Donation Amount" autocomplete="off"
               />
               <button id="donet-now-2" class="btn agkerbg lg:text-xl leaxand">
                 Donate Now
@@ -220,7 +220,7 @@
             </p>
             <div class="card-actions grid grid-rows-2">
               <input
-                id="input-for-student"
+                id="input-for-student" autocomplete="off"
                 class="border-2 rounded-md h-12 p-3 lg:text-sm font-light leaxand text-xs"
                 type="number"
                 placeholder="Write Donation Amount"

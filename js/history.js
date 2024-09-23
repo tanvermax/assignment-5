@@ -1,4 +1,5 @@
-document.getElementById('histor-btn').addEventListener('click',function(){
+document.getElementById('histor-btn').addEventListener('click',function(event){
+    event.preventDefault();
     document.getElementById('histor-btn').classList.add('bg-[#B4F461]');
     document.getElementById('histor-btn').classList.add('border-none');
     document.getElementById('histor-btn').classList.add('text-black');
@@ -29,3 +30,5 @@ document.getElementById('close-btn').addEventListener('click',function(){
         document.getElementById('sec-three').classList.remove('blur-sm');
         document.getElementById('sec-one').classList.remove('blur-sm');
 })
+
+

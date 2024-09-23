@@ -122,10 +122,13 @@ document.getElementById('donet-now').addEventListener('click', function (event) 
 
 
 document.getElementById('blog-btn').addEventListener('click',function(){
-    window.location.href= 'faq.html';
+  
+    
+    window.location.href= 'home.html';
 
 })
 document.getElementById('home-btn').addEventListener('click',function(){
+   
     window.location.href= 'index.html';
 
 })
