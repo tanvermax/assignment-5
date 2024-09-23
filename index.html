@@ -30,25 +30,26 @@
       <div class="navbar bg-base-100 bg-[#F9F7F3] py-2 px-4 lg:py-6 lg:px-32">
         <div class="navbar-start">
           <div class="agkerbg rounded-lg btn lg:h-12 lg:w-28">
-            <button class="text-black leaxand text-sm lg:text-xl">Blog</button>
+            <button id="blog-btn" class="text-black leaxand text-sm lg:text-xl">Blog</button>
           </div>
         </div>
         <div class="navbar-center flex justify-center">
-          <div class="lg:mr-4"><img src="img/logo.png" alt="" /></div>
-          <div class="leaxand font text-sm lg:text-xl font-semibold">
+          <div class="lg:mr-4"><img class="h-6 lg:h-full" src="img/logo.png" alt="" /></div>
+          <div class="leaxand font text-sm lg:text-xl font-semibold mr-5">
             Donate Bangladesh
           </div>
         </div>
         <div class="navbar-end">
           <div class="lg:mr-2"><img src="img/coin.png" alt="" /></div>
-          <div id="main-balance" class="leaxand text-sm lg:text-xl">10000</div>
+          <div id="main-balance" class="leaxand text-sm lg:text-xl ">10000000</div>
           <div class="leaxand text-sm lg:text-xl ml-1">BDT</div>
         </div>
       </div>
     </header>
     <main class="lg:px-32 px-4">
       <!-- section 1 for donation and button -->
-      <section id="sec-one"
+      <section
+        id="sec-one"
         class="flex justify-center pt-5 lg:pt-20 sticky top-14 z-10 backdrop-blur-sm"
       >
         <button
@@ -64,30 +65,34 @@
           History
         </button>
       </section>
-            <!-- 4th and congrets section -->
-            <section
-            id="congrets-sec"
-            class="items-center flex justify-center p-14 border-2 rounded-2xl  fixed top-[20%] left-[40%] z-10 w-96 bg-white hidden"
+      
+      <!-- 4th and congrets section -->
+      <section
+        id="congrets-sec"
+        class="items-center flex justify-center lg:p-12 border-2 rounded-2xl fixed top-[20%] left-[20%] lg:left-[40%] z-10 w-52 lg:w-[450px] bg-white hidden"
+      >
+        <div class="text-center items-center">
+          <h1 class="lg:text-3xl leaxand font-extrabold my-3">Congrats!</h1>
+          <img class="mx-auto" src="img/coin.png" alt="" />
+          <p class="leaxand text-xs lg:text-xl font-light my-3">
+            You Have Donated for Humankind
+          </p>
+          <h2 class="lg:text-2xl leaxand font-semibold">Successfully</h2>
+          <button
+            id="close-btn"
+            class="border-2 rounded-xl text-xs lg:text-xl h-12 leaxand p-2 my-3"
           >
-            <div class="text-center items-center">
-              <h1 class="text-3xl leaxand font-extrabold my-3">Congrates!</h1>
-              <img class="mx-auto" src="img/coin.png" alt="" />
-              <p class="leaxand text-xl font-light my-3">
-                You Have Donated for Humankind
-              </p>
-              <h2 class="text-2xl leaxand font-semibold">Succesfully</h2>
-              <button id="close-btn" class="border-2 rounded-xl h-12 leaxand p-2 my-3">
-                close confirmation
-              </button>
-            </div>
-          </section>
+            close confirmation
+          </button>
+        </div>
+      </section>
       <!-- 2nd section -->
       <section id="sec-three" class="lg:my-10">
         <!-- 1st card    -->
         <div
           class="card lg:card-side grid lg:grid-cols-2 p-8 my-10 rounded-2xl border-2 lg:h-[453px]"
         >
-          <figure class="p-3">
+          <figure class="lg:p-3 p-0">
             <img
               class="h-full w-full rounded-xl object-fill"
               src="img/noakhali.png"
@@ -107,7 +112,7 @@
               Donate for Flood at Noakhali, Bangladesh
             </h2>
             <p
-              class="leaxand lg:text-[16px] text-xs font-light tracking-normal leading-8 text-[#111111B3]"
+              class="leaxand lg:text-[16px] text-xs font-light tracking-normal leading-5 lg:leading-8 text-[#111111B3]"
             >
               The recent floods in Noakhali have caused significant damage to
               homes infrastructure. Your donation will help provide essential
@@ -133,7 +138,7 @@
         <div
           class="card lg:card-side grid lg:grid-cols-2 p-8 rounded-2xl border-2 lg:h-[453px]"
         >
-          <figure class="p-3">
+          <figure class="lg:p-3 p-0">
             <img
               class="h-full w-full rounded-xl object-fill"
               src="img/feni.png"
@@ -153,7 +158,7 @@
               Donate for Flood Relief in Feni,Bangladesh
             </h2>
             <p
-              class="leaxand text-xs lg:text-[16px] font-light tracking-normal leading-8 text-[#111111B3]"
+              class="leaxand text-xs lg:text-[16px] font-light tracking-normal leading-5 lg:leading-8 text-[#111111B3]"
             >
               The recent floods in Feni have devastated local communities,
               leading to severe disruption and loss. Your generous donation will
@@ -181,7 +186,7 @@
         <div
           class="card lg:card-side grid lg:grid-cols-2 p-8 rounded-2xl border-2 lg:h-[453px] my-10"
         >
-          <figure class="p-3">
+          <figure class="lg:p-3 p-0">
             <img
               class="h-full w-full rounded-xl object-fill"
               src="img/quota-protest.png"
@@ -201,7 +206,7 @@
               Aid for Injured in the Quota Movement
             </h2>
             <p
-              class="leaxand lg:text-[16px] text-xs font-light tracking-normal leading-8 text-[#111111B3]"
+              class="leaxand lg:text-[16px] text-xs font-light tracking-normal leading-5 lg:leading-8 text-[#111111B3]"
             >
               The recent Quota movement has resulted in numerous injuries and
               significant hardship for many individuals. Your support is crucial
@@ -228,16 +233,21 @@
         </div>
       </section>
       <!-- history section -->
-      <section>
-        <div>
-          <h2></h2>
+      <section id="transic-sec">
+        <div id="transit-history" >
+          <div >
+
+          </div>
+          
         </div>
       </section>
 
     </main>
-    <script src="js/function.js"></script>
-
     <script src="js/index.js"></script>
+
+    <script src="js/function.js"></script>s
+
     <script src="js/history.js"></script>
+
   </body>
 </html>

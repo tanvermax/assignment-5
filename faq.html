@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .leaxand {
+        font-family: "Lexend", sans-serif;
+      }
+      .agkerbg {
+        background-color: #b4f461;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky top-0 z-10">
+      <div class="navbar bg-base-100 bg-[#F9F7F3] py-2 px-4 lg:py-6 lg:px-32">
+        <div class="navbar-start">
+          <div class="agkerbg rounded-lg btn lg:h-12 lg:w-28">
+            <button id="home-btn" class="text-black leaxand text-sm lg:text-xl">Home</button>
+          </div>
+        </div>
+        <div class="navbar-center flex justify-center">
+          <div class="lg:mr-4">
+            <img class="h-6 lg:h-full" src="img/logo.png" alt="" />
+          </div>
+          <div class="leaxand font text-sm lg:text-xl font-semibold mr-5">
+            Donate Bangladesh
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="lg:mr-2"><img src="img/coin.png" alt="" /></div>
+          <div id="main-balance" class="leaxand text-sm lg:text-xl">
+            10000000
+          </div>
+          <div class="leaxand text-sm lg:text-xl ml-1">BDT</div>
+        </div>
+      </div>
+    </header>
+    <main class="lg:py-6 px-5 lg:px-32 mt-10">
+      <div>
+        <h1 class="leaxand font-bold text-xl lg:text-3xl">Important FAQ</h1>
+      </div>
+      <div>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title  leaxand font-bold text-xl lg:text-3xl">
+              What is the Document Object Model(DOM)?
+            </div>
+            <div class="collapse-content">
+              <p class="leaxand font-medium text-base ">
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the page so that programs can
+                change the document structure, style, and content.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title leaxand font-bold text-xl lg:text-3xl">
+              How do you selet an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="leaxand font-medium text-base ">You can access a select element by using getElementById():</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title leaxand font-bold text-xl lg:text-3xl">
+              what is event delegation in the context of DOM ,and why is it
+              usrful?
+            </div>
+            <div class="collapse-content">
+              <p class="leaxand font-medium text-base ">
+                Event delegation is based event-bubbling method. It is an
+                event-handling pattern that allows you to handle events at a
+                higher level in the DOM tree other than the level where the
+                event was first received.
+              </p>
+            </div>
+          </div>
+          <!-- 4rt -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title leaxand font-bold text-xl lg:text-3xl">
+              How do you manipulate an elements attribute and style using DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="leaxand font-medium text-base ">
+                You can manipulate both an element's attributes and styles using
+                the DOM in JavaScript. <br> 1. Manipulating Attributes: To manipulate
+                attributes, you can use methods like: getAttribute(): Retrieves
+                the value of an attribute. setAttribute(): Sets a new value for
+                an attribute. removeAttribute(): Removes an attribute from an
+                element. hasAttribute(): Checks if an attribute exists.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+
+    <script src="js/function.js"></script>
+
+    <script src="js/history.js"></script>
+  </body>
+</html>

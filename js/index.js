@@ -4,7 +4,7 @@ document.getElementById('donet-now-3').addEventListener('click', function (event
     const mainbalance = GetInputtextByid('main-balance');
     const inputMoney3 = GetInputValueByid('input-for-student');
 
-    if (mainbalance > 0) {
+    if (mainbalance > 0 && inputMoney3 > 0) {
         const Newlowbalance3 = AfterDonetMoney(mainbalance, inputMoney3);
         document.getElementById('main-balance').innerText = Newlowbalance3;
         const StudentBalance = GetInputtextByid('student-balance');
@@ -14,11 +14,24 @@ document.getElementById('donet-now-3').addEventListener('click', function (event
         document.getElementById('congrets-sec').classList.remove('hidden')
         document.getElementById('sec-three').classList.add('blur-sm');
         document.getElementById('sec-one').classList.add('blur-sm');
-
-
-
+        // 
+        
+        const div = document.createElement('div');
+        div.classList.add('border-2')
+        div.classList.add('rounded-xl')
+        div.classList.add('py-5')
+        div.classList.add('px-2')
+        div.classList.add('mt-3')
+        div.innerHTML=`
+        <h1 class="lg:text-xl leaxand">${inputMoney3} Taka Donated for Flood at Noakhali, Bangladesh </h1>
+        <p class="mt-4  text-xs lg:text-base px-4 font-semibold">Date :${new Date()}</p>
+        `
+        document.getElementById('transit-history').appendChild(div);
     }
-
+    else {
+        alert('You din not have enough money or minimum money for donet');
+    
+    }
 })
 
 
@@ -27,7 +40,7 @@ document.getElementById('donet-now-2').addEventListener('click', function (event
     const mainbalance = GetInputtextByid('main-balance');
     const inputMoney2 = GetInputValueByid('input-for-feni-donet');
 
-    if (mainbalance > 0) {
+    if (mainbalance > 0 && inputMoney2 > 0) {
         const Newlowbalance2 = AfterDonetMoney(mainbalance, inputMoney2);
         document.getElementById('main-balance').innerText = Newlowbalance2;
         const FeniBalance = GetInputtextByid('feni-balance');
@@ -37,11 +50,23 @@ document.getElementById('donet-now-2').addEventListener('click', function (event
         document.getElementById('congrets-sec').classList.remove('hidden')
         document.getElementById('sec-three').classList.add('blur-sm');
         document.getElementById('sec-one').classList.add('blur-sm');
-
-
-
+        
+        const div = document.createElement('div');
+        div.classList.add('border-2')
+        div.classList.add('rounded-xl')
+        div.classList.add('py-5')
+        div.classList.add('px-2')
+        div.classList.add('mt-3')
+        div.innerHTML=`
+        <h1 class="lg:text-xl leaxand">${inputMoney2} Taka Donated for Flood at Noakhali, Bangladesh </h1>
+        <p class="mt-4 font-semibold text-xs lg:text-base px-4">Date :${new Date()}</p>
+        `
+        document.getElementById('transit-history').appendChild(div);
     }
-
+    else {
+        alert('You din not have enough money or minimum money for donet');
+        
+    }
 })
 
 
@@ -51,14 +76,12 @@ document.getElementById('donet-now').addEventListener('click', function (event) 
 
 
     const inputMoney = GetInputValueByid('input-for-donet');
-    const inputMoney3 = GetInputValueByid('input-for-student');
+
     console.log(mainbalance, inputMoney);
+    
+    if (mainbalance > 0 && inputMoney > 0) {
 
 
-
-
-    if (mainbalance > 0) {
-        // noyakhali money
         const Newlowbalance = AfterDonetMoney(mainbalance, inputMoney);
 
         const noakhalibalace = GetInputtextByid('noyakhali-balance');
@@ -73,10 +96,36 @@ document.getElementById('donet-now').addEventListener('click', function (event) 
         document.getElementById('sec-one').classList.add('blur-sm');
 
 
-    }
+        const div = document.createElement('div');
+        div.classList.add('border-2')
+        div.classList.add('rounded-xl')
+        div.classList.add('py-5')
+        div.classList.add('px-2')
+        div.classList.add('mt-3')
+        div.innerHTML=`
+        <h1 class="lg:text-xl leaxand">${inputMoney} Taka Donated for Flood at Noakhali, Bangladesh </h1>
+        <p class="mt-4 font-semibold text-xs lg:text-base px-4">Date :${new Date()}</p>
+        `
+        document.getElementById('transit-history').appendChild(div);
+       
+        
+       }
+
+    
+   
     else {
-        alert('You dinnt have enough money ');
+        alert('You din not have enough money or minimum money for donet');
 
     }
+
+})
+
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href= 'faq.html';
+
+})
+document.getElementById('home-btn').addEventListener('click',function(){
+    window.location.href= 'index.html';
 
 })
